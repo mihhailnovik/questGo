@@ -1,0 +1,36 @@
+Server: 1:: --connected
+Client: 5:::{"name":"efa2bd1b","args":[{"env":"WEB","handicapV":"1","gtype":"go9"}]} -- choose game type
+
+Server: 2:: --ping
+Client: 2:: --pong
+
+Client: 5:::{"name":"b9345c05","args":[{"gtype":"go9","pass":"secret_password"}]} -- send password
+Server: 5:::{"name":"b9345c05","args":[{"id":"nickname", "name":"nickname", "bot":0, "gtype":"go9", "token":"secret_token", "pass":"secret_password"}]} -- get authentication data
+
+Client: 5:::{"name":"49669ea6","args":[{"id":"nickname","gtype":"go9","token":"secret_token"}]} -- start to look for game
+Server: 5:::{"name":"341e8bec","args":[{"gtype":"go9","waiting":24}]} -- looking...
+
+5:::{"name":"ba276087","args":[{"id":"twv5vljc9lnw","gtype":"go9","started":"2019-05-31T07:36:20.778Z","players":[{"id":"kuroton","name":"kuroton","dan":2,"rating":1842},{"id":"nickname","name":"nickname","dan":2,"rating":1889}],"tcb":180000,"tci":1000,"remTime":[180000,180000],"position":{"moves":[]}}]} -- game started
+5:::{"name":"8d7a2124","args":[{"id":"twv5vljc9lnw","gtype":"go9","started":"2019-05-31T07:36:20.778Z","players":[{"id":"kuroton","name":"kuroton","dan":2,"rating":1842},{"id":"nickname","name":"nickname","dan":2,"rating":1889}],"tcb":180000,"tci":1000,"remTime":[180000,180000],"position":{"moves":[]}}]} -- game started
+5:::{"name":"8d7a2124","args":[{"id":"twv5vljc9lnw","gtype":"go9","started":"2019-05-31T07:36:20.778Z","players":[{"id":"kuroton","name":"kuroton","dan":2,"rating":1842},{"id":"nickname","name":"nickname","dan":2,"rating":1889}],"tcb":180000,"tci":1000,"remTime":[179899,180000],"position":{"moves":[{"t":101,"m":"B[ee]"},{"t":401,"m":"W[ed]"},{"t":701,"m":"B[ec]"}],"size":9}}]} -- enemy made move
+5:::{"name":"dcc52856","args":[{"game_id":"twv5vljc9lnw","player_id":"nickname","ply":1,"m":"W[ge]","t":83806}]} -- my move
+
+
+5:::{"name":"dcc52856","args":[{"game_id":"twv5vljc9lnw","player_id":"nickname","ply":3,"m":"W[be]","t":37051}]} -- my move
+
+
+
+5:::{"name":"dcc52856","args":[{"game_id":"397d51rl33xb","player_id":"nickname","ply":30,"s":"LOSE:RESIGN","t":24540}]} -- resign move
+
+5:::{"name":"1f566a1a","args":[{"id":"vcfeva4rptkb","gtype":"go9","players":[{"id":"nickname","name":"nickname","oldR":1800.752,"newR":1803.123,"oldD":2,"newD":2,"oldRP":13.441,"newRP":13.503,"oldW":694},{"id":"thc_mania","name":"thc_mania","oldR":1607.088,"newR":1604.717,"oldD":-7,"newD":-7,"oldRP":11.473,"newRP":11.378,"oldW":47}],"position":{"moves":[{"t":5000,"m":"B[df]"},{"s":"LOSE:RESIGN"}],"size":9},"tcb":180000,"finished":true,"tci":1000}]} -- game result
+
+Error during message[5:::{"name":"d40a7297","args":[{"id":"clcp7mfv71cn","num":1}]}] -- unkown message have error now (perhaps disconnect from enemy)
+rror during message[5:::{"name":"d40a7297","args":[{"id":"zq30l70fwlq1","num":0}]}] -- spectatos
+Error during message[5:::{"name":"11c2f7dd","args":[{"id":"grzvr6wo0ix3","userId":"tangent1000"}]}] parsing -- resume game message
+Error during message[5:::{"name":"d40a7297","args":[{"id":"bl6xmc236vl1","num":1}]}] parsing
+
+//{"t":0,"delay":175065,"s":"LOSE:DISCONNECT"}
+// [TextMessage.Streamed(Source(SourceShape(Collect.out(591878391))))]...
+
+//5:::{"name":"2f27ac53","args":[{"reason":"life"}]}) -- kick
+[TextMessage.Strict(5:::{"name":"8d7a2124","args":[{"id":"l8oyggdslbs3","gtype":"go9","started":"2019-07-03T11:45:27.492Z","players":[{"id":"nickname","name":"nickname","dan":2,"rating":1860},{"id":"carlr","name":"CarlR","dan":1,"rating":1841}],"tcb":180000,"tci":1000,"remTime":[89631,180000],"position":{"moves":[]},"delay":90369}]})]

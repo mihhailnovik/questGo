@@ -1,0 +1,11 @@
+image: hseeberger/scala-sbt
+
+stages:
+  - test
+
+test:
+  script:
+    - sbt clean coverage test coverageReport
+  artifacts:
+    reports:
+      junit: target/test-reports/TEST-*.xml
